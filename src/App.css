@@ -1,0 +1,166 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #ECF0F1;
+}
+
+.dataContainer {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1080px;
+  background-color: #ECF0F1;
+  color: black;
+  text-align: center;
+}
+
+.sectionContainerMain {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1080px;
+  height: 48px;
+  background-color: #FDFEFE;
+  font-size: 24px;
+}
+
+.sectionContainer {
+  margin-top: 20px;
+  width: 100%;
+  max-width: 1080px;
+  background-color: #FDFEFE;
+  font-size: 18px;
+}
+
+.Header {
+  width: 1080px;
+}
+
+.menuNav {
+  display: flex;
+  justify-content: space-around;
+}
+
+.menuButton {
+  display: flex;
+  align-items: center;
+}
+
+.menuNav a {
+  border-bottom: 1px solid transparent;
+  color: black;
+  display: block;
+  font-size: 18px;
+  font-weight: 600;
+  text-decoration: none;
+  filter: opacity(100%);
+  transition: 0.25s;
+}
+
+.menuNav a:hover {
+  filter: opacity(40%);
+}
+
+.infoRowContainer {
+  display: flex;
+  flex-direction: row;
+}
+
+.infoColumnArrows {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  margin-left: 690px;
+}
+
+.infoRowArrows {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.infoRowMain {
+  margin: 0 auto;
+  max-width: 300px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.infoRow {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.infoColumn {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.infoColumn2 {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  margin-left: 220px;
+}
+
+.smallText {
+  font-size: 14px;
+}
+
+.redText {
+  color: red;
+}
+
+.greenText {
+  color: green;
+}
+
+.smallRedText {
+  font-size: 14px;
+  color: red;
+}
+
+.newsContainer {
+  margin-top: 20px;
+  width: 100%;
+  max-width: 1080px;
+  background-color: #FDFEFE;
+}
+
+.newsCard {
+  margin: 0 auto;
+  max-width: 1040px;
+  width: 100%;
+  height: 300px;
+  background-color: #FDFEFE;
+  overflow: hidden;
+}
+
+.newsRow {
+  display: flex;
+  flex-direction: row;
+}
+
+.newsImageContainer {
+  margin-top: 20px;
+  height: 240px;
+}
+
+.newsTextContainer {
+  margin-left: 20px;
+  text-align: left;
+}
+
+.menuSmallText {
+  font-size: 14px;
+}
+
+.menuMedText {
+  font-size: 18px;
+}
