@@ -18,6 +18,9 @@ function Country() {
   const [casesPerOneMillion, setCountryCasesPerOneMillion] = useState("");
   const [deathsPerOneMillion, setCountryDeathsPerOneMillion] = useState("");
 
+  const [totalTests, setCountryTotalTests] = useState("");
+  const [testsPerOneMillion, setCountryTestsPerOneMillion] = useState("");
+
   let history = useHistory();
 
   // NEWS BY COUNTRY
@@ -135,6 +138,8 @@ function Country() {
       setCountryCritical(coronaCountryData.critical);
       setCountryCasesPerOneMillion(coronaCountryData.casesPerOneMillion);
       setCountryDeathsPerOneMillion(coronaCountryData.deathsPerOneMillion);
+      setCountryTotalTests(coronaCountryData.totalTests);
+      setCountryTestsPerOneMillion(coronaCountryData.testsPerOneMillion);
     }
   }, [coronaCountryData]);
 
@@ -202,6 +207,19 @@ function Country() {
             <div className="infoColumn2">
               <p><strong>{casesPerOneMillion}</strong></p>
               <p><strong>{deathsPerOneMillion}</strong></p>
+            </div>
+          </div>
+        </div>
+
+        <div className="sectionContainer">
+          <div className="infoRowMain">
+            <div className="infoColumn">
+              <p><strong>Total Tests:</strong></p>
+              <p><strong>Tests per One Million:</strong></p>
+            </div>
+            <div className="infoColumn2">
+              <p><strong>{totalTests}</strong></p>
+              <p><strong>{testsPerOneMillion}</strong></p>
             </div>
           </div>
         </div>
